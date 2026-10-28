@@ -1,2 +1,12 @@
+# Entorno virtual
+venv/
+.venv/
+
+# Datos locales (no subir los CSV al repositorio)
+data/
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+
 # Visual Studio
 .vs/

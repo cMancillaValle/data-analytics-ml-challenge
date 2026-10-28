@@ -10,17 +10,34 @@ Repositorio individual para el ML Challenge de la asignatura Data Analytics (202
 
 ## Configuración del Estudiante
 * ID asignado: 19.
-* Semilla de partición: Por asignar.
+* Semilla de partición: 1019.
 * Tamaño de muestra: 35,000 registros.
 
+## Estado del proyecto
+
+**En desarrollo (Semana 12).**
+
 ## Estructura del Repositorio
+
+**Estado:** En desarrollo (Semana 12).
+
 ```text
-data/
-  raw/          # datos originales, no se publican
-  processed/    # datos preparados, se regeneran
-notebooks/
-  (archivo de análisis .ipynb)
-src/            # funciones reutilizables de siguientes retos
-reports/
-  S12_resultados_ID_19.json
-README.md
+data-analytics-ml-challenge/
+├── data/
+│   ├── processed/
+│   └── raw/
+├── notebooks/
+│   ├── Semana_12/
+│   │   └── S12_ML_Challenge.ipynb
+│   └── README.md
+├── reports/
+│   └── S12_resultados_ID_19.json
+├── src/
+│   └── iniciarEntorno/
+│       ├── __init__.py
+│       └── gestor_dependencias.py
+├── venv/
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
