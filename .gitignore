@@ -10,3 +10,7 @@ data/
 
 # Visual Studio
 .vs/
+
+# Caché de Python
+__pycache__/
+*.py[cod]

@@ -19,8 +19,6 @@ Repositorio individual para el ML Challenge de la asignatura Data Analytics (202
 
 ## Estructura del Repositorio
 
-**Estado:** En desarrollo (Semana 12).
-
 ```text
 data-analytics-ml-challenge/
 ├── data/

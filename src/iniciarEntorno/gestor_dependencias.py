@@ -15,7 +15,7 @@ def preparar_entorno():
     raiz = Path(__file__).resolve().parent.parent.parent
     requirements_path = raiz / 'requirements.txt'
 
-    print(f"--- [Iniciando Entorno] Raíz detectada: {raiz} ---")
+    print(f"    [Iniciando Entorno] Raíz detectada: {raiz}")
 
     if not requirements_path.exists():
         print(f"Advertencia: No se encontró {requirements_path}")
@@ -25,6 +25,6 @@ def preparar_entorno():
         subprocess.check_call(
             [sys.executable, "-m", "pip", "install", "-r", str(requirements_path)]
         )
-        print("--- [Entorno Listo] Todas las dependencias están al día ---")
+        print("    [Entorno Listo] Todas las dependencias están al día")
     except subprocess.CalledProcessError as err:
         print(f"Error durante la instalación de dependencias: {err}")
