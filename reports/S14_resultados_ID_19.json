@@ -1,0 +1,135 @@
+{
+  "laboratorio": "S14",
+  "id_estudiante": "19",
+  "semilla": 1019,
+  "timestamp_utc": "2026-11-16T20:31:43.229028+00:00",
+  "entorno": {
+    "python": "3.10.5",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "muestra": {
+    "total": 35000,
+    "train": 24500,
+    "valid": 5250,
+    "test": 5250,
+    "huella": "120d6b36c5fa",
+    "tasa_tardias": 0.06774285714285715
+  },
+  "predictores": {
+    "numericos": [
+      "dias_prometidos",
+      "mes_compra",
+      "dia_semana_compra",
+      "dia_mes_compra",
+      "hora_compra",
+      "compra_fin_semana",
+      "valor_productos",
+      "valor_flete",
+      "precio_maximo",
+      "cantidad_items",
+      "cantidad_productos",
+      "cantidad_vendedores",
+      "peso_total_g",
+      "peso_maximo_g",
+      "volumen_total_cm3",
+      "fotos_promedio",
+      "descripcion_promedio",
+      "nombre_promedio",
+      "numero_pagos",
+      "cuotas_maximas",
+      "valor_pagado",
+      "vendedor_mismo_estado",
+      "vendedor_misma_ciudad",
+      "proporcion_flete"
+    ],
+    "categoricos": [
+      "customer_state",
+      "estado_vendedor",
+      "categoria_principal",
+      "tipo_pago_principal"
+    ]
+  },
+  "pca": {
+    "variables_originales": 24,
+    "componentes": 15,
+    "varianza_explicada": 0.9061588720943635
+  },
+  "experimentos": {
+    "A": {
+      "pca": false,
+      "C": 1.0,
+      "class_weight": "balanced",
+      "umbral": 0.5,
+      "metricas": {
+        "Accuracy": 0.6546666666666666,
+        "Precision": 0.11832460732984293,
+        "Recall": 0.6366197183098592,
+        "F1": 0.19955849889624724,
+        "AP": 0.1401982052052584
+      },
+      "fp": 1684,
+      "fn": 129,
+      "costo_brl": 17987
+    },
+    "B": {
+      "pca": true,
+      "C": 1.0,
+      "class_weight": "balanced",
+      "umbral": 0.5,
+      "metricas": {
+        "Accuracy": 0.6493333333333333,
+        "Precision": 0.11099476439790576,
+        "Recall": 0.5971830985915493,
+        "F1": 0.18719646799116998,
+        "AP": 0.1130395596136865
+      },
+      "fp": 1698,
+      "fn": 143,
+      "costo_brl": 18589
+    },
+    "C": {
+      "pca": true,
+      "C": 0.1,
+      "class_weight": "balanced",
+      "umbral": 0.5,
+      "metricas": {
+        "Accuracy": 0.6483809523809524,
+        "Precision": 0.10948140387637506,
+        "Recall": 0.5887323943661972,
+        "F1": 0.18462897526501768,
+        "AP": 0.1137683645310521
+      },
+      "fp": 1700,
+      "fn": 146,
+      "costo_brl": 18710
+    },
+    "D": {
+      "pca": true,
+      "C": 10.0,
+      "class_weight": "balanced",
+      "umbral": 0.5,
+      "metricas": {
+        "Accuracy": 0.6481904761904762,
+        "Precision": 0.11105318039624609,
+        "Recall": 0.6,
+        "F1": 0.18741750989881215,
+        "AP": 0.11221251667098667
+      },
+      "fp": 1705,
+      "fn": 142,
+      "costo_brl": 18610
+    }
+  },
+  "ks": {
+    "variable": "valor_flete",
+    "estadistico_d": 0.00922448979591839,
+    "valor_p": 0.8520270142878573,
+    "alpha": 0.05,
+    "rechaza_h0": false
+  },
+  "mejor_modelo_validacion": "A",
+  "costo_referencia_sin_alertas_brl": 12425,
+  "fuente_olist_commit": "fa0cc6d1aff713d3c8b9a1e633b56889881848bf"
+}
